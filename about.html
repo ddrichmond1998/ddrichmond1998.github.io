@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<head>
+  <link href="/normalize.css" rel="stylesheet">
+  <style>
+    header {
+      text-align: center;
+      background: url('https://i.imgur.com/4zeFfqd.jpg');
+      background-size: cover;
+      color: Tomato;
+    }
+    a {
+      color: white;
+    }
+    h1 {
+      font-size: 70px;
+    }
+    img {
+      margin: 40px 0px 0px 0px;
+      border: 7px solid black;
+      border-radius: 50%;
+    }
+    ul {
+      padding: 10px;
+      background: rgba(0,0,0,0.5);
+    }
+    li {
+      display: inline;
+      padding: 0px 10px 0px 10px;
+    }
+    article {
+      max-width: 500px;
+      padding: 20px;
+      margin: 0 auto;
+    }
+    @media (max-width: 500px) {
+      h1 {
+        font-size: 36px;
+        padding: 5px;
+      }
+      li {
+        padding: 5px;
+        display: block;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://i.imgur.com/cX6FdR9.jpg?1">
+    <h1>Daniel Richmond</h1>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="contact.html">Contact Me</a></li>
+    </ul>
+  </header>
+  <p>
+  	<form>
+  <input type="email" placeholder="Your email">
+  <input type="submit">
+</form>
+  </p>
+  <article>
+    <h2>Welcome to My Blog</h2>
+    <p>Thanks for dropping by. This site will serve as a means to grow a network of like-minded professionals, as well as an overview of my professional career... where I've been, where I am and where I plan to be in the forseeable future. Please feel free and submit your email so we can connect.</p>
+    <button>Like</button>
+  </article>
+  <article>
+    <h2>Educational Background</h2>
+    <p>Attended Belmont University from 1999 through 2003, graduating with a Bachelor's Degree in Management. After running a small buisiness for two years, returned to Belmont and attained my MBA, witIh a focus in Healthcare and Negotiations.</p>
+    <button>Like</button>
+  </article>
+  <article>
+    <h2>Professional Summary</h2>
+    <p>Business-driven Project Manager and Operations Consultant reputed for the ability to resuscitate projects with a weak prognosis and deliver results to challenged operations. Excel in new program implementation and training, sales and marketing, shaping business strategy, multi-level communications and developing high-performing teams. Chasing a dream and starting a coding bootcamp, aspiring to become a Software Engineer by 2021.</p>
+    <button>Like</button>
+  </article>
+  <script>
+    $("button").on("click", function() {
+      alert("Clicked!");
+    });
+  </script>
+</body>
